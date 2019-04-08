@@ -19,10 +19,6 @@ import org.mule.runtime.core.api.util.ClassUtils;
 import org.mule.runtime.core.api.util.StringUtils;
 import org.mule.tck.ZipUtils;
 
-import org.apache.commons.io.filefilter.NameFileFilter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -39,6 +35,10 @@ import java.util.StringJoiner;
 import javax.tools.JavaCompiler;
 import javax.tools.JavaFileObject;
 import javax.tools.StandardJavaFileManager;
+
+import org.apache.commons.io.filefilter.NameFileFilter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Tools to compile Java files into classes, jars and Mule extensions.
